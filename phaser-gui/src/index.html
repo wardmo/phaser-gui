@@ -2,11 +2,81 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello SAM!</title>
+    <title>Phaser Cammand Line GUI</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1>💖 Hello SAM!</h1>
-    <p>Welcome to your Electron application.</p>
+    <div class="button-group">
+      <button>Read device information (serial number, version, etc)</button>
+      <button>Read Error Log</button>
+      
+    </div>
+
+    <div class="button-group">
+      <button>Enter Bootloader</button>
+    </div>
+    
+    <div class="button-group">
+      <button>Use Salsa20</button>
+      <button>Use Salsa20 Encryption in Program: true or false (default true)</button>
+    </div>
+    
+    <div class="button-group">
+      <button>Target microcontroller</button>
+      <button>Target FPGA</button>
+      <button>Target EEPROM</button>
+    </div>
+    
+    <div class="button-group">
+      <button>Read target to file</button>
+      <button>Write target from file</button>
+      <button>Verfy target against file</button>
+    </div>
+      
+    <div class="button-group">
+      <button>4k FPGA</button>
+      <button>8k FPGA</button>
+      <button>16k FPGA</button>
+      <button>Reconfigure FPGA (if supported)</button>
+    </div>
+
+    <div class="button-group">
+      <button>List USB - CAN device paths</button>
+      <button>Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
+    </div>
+    
+    <div class="button-group">
+      <button>CAN Mask                        (default -m 0x7FF )</button>
+      <button>CAN Tx Address                  (default -a 0x7E4 )</button>
+      <button>CAN Rx Address                  (default -b 0x7EC )</button>
+      <button>CAN Timeout                     (default -t 6000 )</button>
+    </div>
+
+    <div class="button-group">    
+      <button>Filename                        (i.e. -n Firmware.txt )</button>
+      <button>Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
+    </div>
+
+    <div class="button-group">    
+      <button>Checksum Header Write</button>
+      <button>Write Device Serial Number</button>
+      <button>Write Device Sku (numeric 32 bit unsigned int)</button>
+    </div>
+
+    <div class="button-group">    
+      <button>Clear DTCs if supported</button>
+      <button>Clear DTCs</button>
+    </div>
+
+    <div class="button-group">
+      <button>Extension</button>
+      <button>Address</button>
+      <button>Byte Count</button>
+      <button>Message Data                     "0x01 0x02 0x03 0x04"</button>
+    </div>
+
+    <div class="button-group">
+      <button>Execute</button>
+    </div>
   </body>
 </html>
