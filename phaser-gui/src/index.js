@@ -45,6 +45,112 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
 
-function test(){
+
+// This code is for the buttons that dont need extra user inputs. 
+// Code to add more buttons is found below 
+
+// function (){
+//   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "";
+// }
+
+function readDeviceInformation(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-i";
 }
+
+function targetMicrocontroller(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-u";
+}
+
+function targetFPGA(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-f";
+}
+
+function targetEEPROM(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-e";
+}
+
+function readTargetToFile(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-r";
+}
+
+function writeTargetFromFile(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-w";
+}
+
+function verifyTargetAgainstFile(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-v";
+}
+
+function fpga4k(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-4";
+}
+
+function fpga8k(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-8";
+}
+
+function fpga16k(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-6";
+}
+
+function reconfigureFPGA(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-x";
+}
+
+function listUSB(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-l";
+}
+
+function checksumHeaderWrite(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-c";
+}
+
+function writeDeviceSerialNumber(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-s";
+}
+
+function clearDTCs(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-y";
+}
+
+function readErrorLog(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-g";
+}
+
+function useSalsa20(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-z";
+}
+
+function enterBootloader(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-j";
+}
+
+function extension(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-%";
+}
+
+function address(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-#";
+}
+
+
+function byteCount(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-&";
+}
+
+function messageData(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-q";
+}
+
+function clear(){
+  document.getElementById("commandLine").innerHTML = "";
+}
+
+
+
+
+
+
+
+
+
