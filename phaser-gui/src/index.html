@@ -7,82 +7,91 @@
   </head>  
   <script src="index.js"></script>
   <body>
+    <div class="page">
+      <div class = "command-line">
+        <div class="cmd-line-textbox">
+          <h1 id = "commandLine"></h1>
+        </div>    
+        <div class="cmd-line-btn">
+          <button>Clear</button>
+        </div>
+        <div class="cmd-line-btn">
+          <button>Undo</button>
+        </div>
+      </div>
 
-    <div class = "command line">    
-      <h1 id = "commandLine"></h1>
-    </div>
+      <div class="button-group">
+        <button onclick = "readDeviceInformation()">Read device information (serial number, version, etc)</button>
+        <button onclick = "readErrorLog()">Read Error Log</button>
+        
+      </div>
 
-    <div class="button-group">
-      <button onclick = "readDeviceInformation()">Read device information (serial number, version, etc)</button>
-      <button onclick = "readErrorLog()">Read Error Log</button>
+      <div class="button-group">
+        <button onclick = "enterBootloader()">Enter Bootloader</button>
+      </div>
       
-    </div>
-
-    <div class="button-group">
-      <button onclick = "enterBootloader()">Enter Bootloader</button>
-    </div>
-    
-    <div class="button-group">
-      <button onclick = "useSalsa20()">Use Salsa20</button>
-      <button onclick = "useSalsa20()">Use Salsa20 Encryption in Program: true or false (default true)</button>
-    </div>
-    
-    <div class="button-group">
-      <button onclick = "targetMicrocontroller()">Target microcontroller</button>
-      <button onclick = "targetFPGA()">Target FPGA</button>
-      <button onclick = "targetEEPROM()">Target EEPROM</button>
-    </div>
-    
-    <div class="button-group">
-      <button onclick = "readTargetToFile()">Read target to file</button>
-      <button onclick = "writeTargetFromFile()">Write target from file</button>
-      <button onclick = "verifyTargetAgainstFile()">Verfy target against file</button>
-    </div>
+      <div class="button-group">
+        <button onclick = "useSalsa20()">Use Salsa20</button>
+        <button onclick = "useSalsa20()">Use Salsa20 Encryption in Program: true or false (default true)</button>
+      </div>
       
-    <div class="button-group">
-      <button onclick = "fpga4k()">4k FPGA</button>
-      <button onclick = "fpga8k()">8k FPGA</button>
-      <button onclick = "fpga16k()">16k FPGA</button>
-      <button onclick = "reconfigureFPGA()">Reconfigure FPGA (if supported)</button>
-    </div>
+      <div class="button-group">
+        <button onclick = "targetMicrocontroller()">Target microcontroller</button>
+        <button onclick = "targetFPGA()">Target FPGA</button>
+        <button onclick = "targetEEPROM()">Target EEPROM</button>
+      </div>
+      
+      <div class="button-group">
+        <button onclick = "readTargetToFile()">Read target to file</button>
+        <button onclick = "writeTargetFromFile()">Write target from file</button>
+        <button onclick = "verifyTargetAgainstFile()">Verfy target against file</button>
+      </div>
+        
+      <div class="button-group">
+        <button onclick = "fpga4k()">4k FPGA</button>
+        <button onclick = "fpga8k()">8k FPGA</button>
+        <button onclick = "fpga16k()">16k FPGA</button>
+        <button onclick = "reconfigureFPGA()">Reconfigure FPGA (if supported)</button>
+      </div>
 
-    <div class="button-group">
-      <button onclick = "listUSB()">List USB - CAN device paths</button>
-      <button onclick = "">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
-    </div>
-    
-    <div class="button-group">
-      <button onclick = "">CAN Mask                        (default -m 0x7FF )</button>
-      <button onclick = "">CAN Tx Address                  (default -a 0x7E4 )</button>
-      <button onclick = "">CAN Rx Address                  (default -b 0x7EC )</button>
-      <button onclick = "">CAN Timeout                     (default -t 6000 )</button>
-    </div>
+      <div class="button-group">
+        <button onclick = "listUSB()">List USB - CAN device paths</button>
+        <button onclick = "">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
+      </div>
+      
+      <div class="button-group">
+        <button onclick = "">CAN Mask                        (default -m 0x7FF )</button>
+        <button onclick = "">CAN Tx Address                  (default -a 0x7E4 )</button>
+        <button onclick = "">CAN Rx Address                  (default -b 0x7EC )</button>
+        <button onclick = "">CAN Timeout                     (default -t 6000 )</button>
+      </div>
 
-    <div class="button-group">    
-      <button onclick = "">Filename                        (i.e. -n Firmware.txt )</button>
-      <button onclick = "">Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
-    </div>
+      <div class="button-group">    
+        <button onclick = "">Filename                        (i.e. -n Firmware.txt )</button>
+        <button onclick = "">Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
+      </div>
 
-    <div class="button-group">    
-      <button onclick = "checksumHeaderWrite()">Checksum Header Write</button>
-      <button onclick = "writeDeviceSerialNumber()">Write Device Serial Number</button>
-      <button onclick = "">Write Device Sku (numeric 32 bit unsigned int)</button>
-    </div>
+      <div class="button-group">    
+        <button onclick = "checksumHeaderWrite()">Checksum Header Write</button>
+        <button onclick = "writeDeviceSerialNumber()">Write Device Serial Number</button>
+        <button onclick = "">Write Device Sku (numeric 32 bit unsigned int)</button>
+      </div>
 
-    <div class="button-group">    
-      <button onclick = "clearDTCs()">Clear DTCs if supported</button>
-      <button onclick = "clearDTCs()">Clear DTCs</button>
-    </div>
+      <div class="button-group">    
+        <button onclick = "clearDTCs()">Clear DTCs if supported</button>
+        <button onclick = "clearDTCs()">Clear DTCs</button>
+      </div>
 
-    <div class="button-group">
-      <button onclick = "extension()">Extension</button>
-      <button onclick = "address()">Address</button>
-      <button onclick = "byteCount()">Byte Count</button>
-      <button onclick = "messageData()">Message Data                     "0x01 0x02 0x03 0x04"</button>
-    </div>
+      <div class="button-group">
+        <button onclick = "extension()">Extension</button>
+        <button onclick = "address()">Address</button>
+        <button onclick = "byteCount()">Byte Count</button>
+        <button onclick = "messageData()">Message Data                     "0x01 0x02 0x03 0x04"</button>
+      </div>
 
-    <div class="button-group">
-      <button onclick = "clear()">Execute</button>
+      <div class="button-group">
+        <button onclick = "clear()">Execute</button>
+      </div>
     </div>
 
   </body>
