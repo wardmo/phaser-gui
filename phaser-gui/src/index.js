@@ -142,9 +142,9 @@ function messageData(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-q";
 }
 
-function clear(){
+function empty(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = "cl";
+  document.getElementById("commandLine").innerHTML = myheaders;
 }
 
 
