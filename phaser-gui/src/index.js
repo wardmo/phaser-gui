@@ -143,7 +143,8 @@ function messageData(){
 }
 
 function clear(){
-  document.getElementById("commandLine").innerHTML = "";
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = "cl";
 }
 
 
