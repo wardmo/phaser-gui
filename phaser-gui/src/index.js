@@ -144,7 +144,7 @@ function messageData(){
 
 function clear(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = "clear";
+  document.getElementById("commandLine").innerHTML = "cl";
 }
 
 
