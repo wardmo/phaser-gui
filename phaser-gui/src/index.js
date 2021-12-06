@@ -142,6 +142,14 @@ function messageData(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-q";
 }
 
+function writeDeviceSku(){
+  var sku = window.prompt("enter number between 1 and 32: ");
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d(" + sku + ")";
+}
+
+
+
+//the backspace and clear functions are found here
 function empty(){
   var myheaders = "";
   document.getElementById("commandLine").innerHTML = myheaders;
