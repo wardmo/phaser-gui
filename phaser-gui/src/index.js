@@ -143,8 +143,8 @@ function messageData(){
 }
 
 function clear(){
-  var myheaders = new Headers();
-  document.getElementById("commandLine").innerHTML = Headers();
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = "clear";
 }
 
 
