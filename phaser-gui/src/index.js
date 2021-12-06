@@ -147,11 +147,8 @@ function empty(){
   document.getElementById("commandLine").innerHTML = myheaders;
 }
 
-
-
-
-
-
-
-
-
+function backspace(){
+  let str = document.getElementById("commandLine").innerHTML
+  str = str.substring(0,str.length - 1);
+  document.getElementById("commandLine").innerHTML = str;
+}
