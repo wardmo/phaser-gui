@@ -163,8 +163,10 @@ function backspace(){
   document.getElementById("commandLine").innerHTML = str;
 }
 
-//function Execute(){
-  //const execSync = require(document.getElementById("commandLine").innerHTML).execSync;
-  //const output = execSync(/phaser-command-line/PhaserCommandLine.exe, {encoding: 'utf-8'});
-  //document.getElementById("outbox").innerHTML = output;
-//}
+/*
+function Execute(){
+  const execSync = require(document.getElementById("commandLine").innerHTML).execSync;
+  const output = execSync(/phaser-command-line/PhaserCommandLine.exe, {encoding: 'utf-8'});
+  document.getElementById("outbox").innerHTML = output;
+}
+*/
