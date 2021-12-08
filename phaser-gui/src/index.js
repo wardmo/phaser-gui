@@ -151,8 +151,6 @@ function writeDeviceSku(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d(" + sku + ")";
 }
 
-function
-
 //the backspace and clear functions are found here
 function empty(){
   var myheaders = "";
