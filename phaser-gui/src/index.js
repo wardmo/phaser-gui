@@ -147,8 +147,23 @@ function messageData(){
 
 
 function writeDeviceSku(){
-  var sku = window.prompt("enter number between 1 and 32: ");
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d(" + sku + ")";
+  document.getElementById("userInputLabel").innerHTML = "enter number between 1 and 32: ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d"
+}
+
+function submit(){
+  if (document.getElementById("userInputLabel").innerHTML ==""){
+    var myheaders = "";
+    document.getElementById("userInput").value = myheaders;
+    document.getElementById("userInputLabel").innerHTML = myheaders;
+  }
+  else{
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput").value;
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
+  }
 }
 
 //the backspace and clear functions are found here
