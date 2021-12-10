@@ -179,8 +179,16 @@ function quickfeatures(){
   
 }
 
+/*
 function execute(){
   const execSync = require(document.getElementById("commandLine").innerHTML).execSync;
   const output = execSync(/phaser-command-line/PhaserCommandLine.exe, {encoding: 'utf-8'});
   document.getElementById("outbox").innerHTML = output;
+}
+*/
+
+function execute(){
+  const execSync = require('child_process').execSync;
+  const output = execSync('PATH_TO_PHASERCOMMANDLINE.EXE', {encoding: 'utf-8'});
+  console.log(output);
 }
