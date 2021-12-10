@@ -74,7 +74,7 @@
       <div class="button-group">    
         <button onclick = "checksumHeaderWrite()">Checksum Header Write</button>
         <button onclick = "writeDeviceSerialNumber()">Write Device Serial Number</button>
-        <button onclick = "writeDeviceSku()">Write Device Sku (numeric 32 bit unsigned int)</button>
+        <button onclick = "writeDeviceSku()">Write Device Sku (numeric 32 bit unsigned int) </button>
       </div>
 
       <div class="button-group">    
@@ -99,6 +99,13 @@
       <div class="button-group">
         <button onclick = "Execute()">Execute</button>
       </div>
+      <br><br><br>
+      <div class = "user-input">
+        <label for="input" id = "userInputLabel"></label>
+        <input type="text" id = "userInput" name="input"><br><br>
+        <button onclick = "submit()">Submit</button>
+      </div>
+
       <div class="output">
         <h1 id="outbox"></h1>
       </div>
