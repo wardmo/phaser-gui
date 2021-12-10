@@ -56,18 +56,18 @@
 
       <div class="button-group">
         <button onclick = "listUSB()">List USB - CAN device paths</button>
-        <button onclick = "">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
+        <button onclick = "pathToUSB()">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
       </div>
       
       <div class="button-group">
-        <button onclick = "">CAN Mask                        (default -m 0x7FF )</button>
-        <button onclick = "">CAN Tx Address                  (default -a 0x7E4 )</button>
-        <button onclick = "">CAN Rx Address                  (default -b 0x7EC )</button>
-        <button onclick = "">CAN Timeout                     (default -t 6000 )</button>
+        <button onclick = "canMask()">CAN Mask                        (default -m 0x7FF )</button>
+        <button onclick = "canTxAddress()">CAN Tx Address                  (default -a 0x7E4 )</button>
+        <button onclick = "canRxAddress()">CAN Rx Address                  (default -b 0x7EC )</button>
+        <button onclick = "canTimeout()">CAN Timeout                     (default -t 6000 )</button>
       </div>
 
       <div class="button-group">    
-        <button onclick = "">Filename                        (i.e. -n Firmware.txt )</button>
+        <button onclick = "filename()">Filename                        (i.e. -n Firmware.txt )</button>
         <button onclick = "">Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
       </div>
 
