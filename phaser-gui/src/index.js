@@ -149,9 +149,50 @@ function messageData(){
 function writeDeviceSku(){
   document.getElementById("userInputLabel").innerHTML = "enter number between 1 and 32: ";
   document.getElementById("userInput").focus();
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d"
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d";
 }
 
+function pathToUSB(){
+  document.getElementById("userInputLabel").innerHTML = "enter which UsbCanDevice you would like to use. (ex. 'UsbCanDevice 1 )'";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-p ";
+}
+
+function canMask(){
+  document.getElementById("userInputLabel").innerHTML = "enter CAN Mask (ex 0x7FF) ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-m ";
+}
+
+function canTxAddress(){
+  document.getElementById("userInputLabel").innerHTML = "enter CAN Tx Address (ex 0x7E4) ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-a ";
+}
+
+function canRxAddress(){
+  document.getElementById("userInputLabel").innerHTML = "enter CAN RxAddress (ex 0x7EC) ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-b ";
+}
+
+function canTimeout(){
+  document.getElementById("userInputLabel").innerHTML = "enter CAN Timeout Length (ex 6000) ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-t ";
+}
+
+function filename(){
+  document.getElementById("userInputLabel").innerHTML = "enter filename (ex Firmware.txt) ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-n ";
+}
+
+function outputFilename(){
+  document.getElementById("userInputLabel").innerHTML = "enter outputFilename (ex ChecksumedFirmware.txt) ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-o ";
+}
 // submit button to enter user input into the phasercommand line
 function submit(){
   if (document.getElementById("userInputLabel").innerHTML ==""){
