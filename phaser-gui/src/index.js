@@ -152,6 +152,7 @@ function writeDeviceSku(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d"
 }
 
+// submit button to enter user input into the phasercommand line
 function submit(){
   if (document.getElementById("userInputLabel").innerHTML ==""){
     var myheaders = "";
