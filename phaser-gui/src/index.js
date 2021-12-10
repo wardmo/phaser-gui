@@ -142,6 +142,9 @@ function messageData(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-q";
 }
 
+function bluetoothList(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--bluetoothlist";
+}
 
 // functions for those buttons that require user input to work
 
@@ -149,7 +152,7 @@ function messageData(){
 function writeDeviceSku(){
   document.getElementById("userInputLabel").innerHTML = "enter number between 1 and 32: ";
   document.getElementById("userInput").focus();
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d ";
 }
 
 function pathToUSB(){
@@ -193,6 +196,19 @@ function outputFilename(){
   document.getElementById("userInput").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-o ";
 }
+
+function bluetoothName(){
+  document.getElementById("userInputLabel").innerHTML = "enter device you want to connect to";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--bluetoothname ";
+}
+
+function bluetoothPrefix(){
+  document.getElementById("userInputLabel").innerHTML = "enter device name prefix such as PLX ";
+  document.getElementById("userInput").focus();
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--btprefix ";
+}
+
 // submit button to enter user input into the phasercommand line
 function submit(){
   if (document.getElementById("userInputLabel").innerHTML ==""){
