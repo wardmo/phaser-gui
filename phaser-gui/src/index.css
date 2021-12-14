@@ -12,8 +12,10 @@ body {
 .command-line{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   height:50px;
+  width:85%;
 }
 .command-line>.cmd-line-textbox{
 width: 500px;
@@ -36,9 +38,14 @@ width: 500px;
 }
 .button-group{
   display: flex;
+  width: 800px;
   flex-direction: row;
+  justify-content: center;
 }
 .button-group button{
+  width:100%;
+}
+button{
   text-decoration: none;
   border: none;
   color: white;
@@ -50,7 +57,27 @@ width: 500px;
   height: 50px;
   transition-duration: 0.1s;
 }
-.button-group button:hover{
+button:hover{
   background-color: black;
   border-radius: 10px;
+}
+.user-input{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 400px;
+  margin: 0px;
+}
+.user-input button{
+  margin: 0px;
+  width:100px;
+  justify-content: space-between;
+}
+.user-input input{
+  margin: 0px;
+  width: 300px;
+}
+.user-input label{
+  text-align: center;
+  width: 300px;
 }
