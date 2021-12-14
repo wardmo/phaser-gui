@@ -235,23 +235,6 @@ function backspace(){
   str = str.substring(0,str.length - 1);
   document.getElementById("commandLine").innerHTML = str;
 }
-
-function bluetoothList(){
-  
-}
-
-function bluetoothName(){
-  
-}
-
-function bluetoothPrefix(){
-
-}
-
-function quickfeatures(){
-  
-}
-
 /*
 function Execute(){
   const execSync = require(document.getElementById("commandLine").innerHTML).execSync;
