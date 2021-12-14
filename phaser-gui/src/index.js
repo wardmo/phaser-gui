@@ -1,7 +1,8 @@
-const { exec } = require('child_process');
 const { app, BrowserWindow } = require('electron'); 
 const path = require('path');
 const { stdout, stderr } = require('process');
+const { exec } = require('child_process');
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -13,6 +14,10 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false
+    }
   });
 
   // and load the index.html of the app.
@@ -189,18 +194,17 @@ function execute(){
 }
 */
 
-function execute(){  
-  const execSync = require('child_process').execSync; 
-  exec(document.getElementById("commandLine").innerHTML, (error, stdout, stderr)); {
+function execute(){
+  exec('echo Hello World', function(error, stdout, stderr) {
     if (error){
       console.log(`error: ${error.message}`)
     }
-    if (sterr){
-      console.log(`sterr: ${stderr}`)
+    else if(stderr){
+      console.log(`stderr: ${stderr}`)
     }
+    else
     console.log(`stdout: ${stdout}`)
-  }
-  
+  })
   /*
   const output = execSync("C:\Users\shapiroga\Documents\GitHub\phaser-gui\phaser-command-line", {encoding: 'utf-8'});
   console.log(output);
