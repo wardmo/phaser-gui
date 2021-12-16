@@ -114,4 +114,5 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
   background-color: rgb(59, 59, 59);
+  color: white;
 }
