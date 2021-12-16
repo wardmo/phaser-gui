@@ -239,6 +239,6 @@ function backspace(){
 function Execute(){
   const execSync = require(document.getElementById("commandLine").innerHTML).execSync;
   const output = execSync(/phaser-command-line/PhaserCommandLine.exe, {encoding: 'utf-8'});
-  document.getElementById("outbox").innerHTML = output;
+  document.getElementById("outbox").innerHTML = str.output;
 }
 */
