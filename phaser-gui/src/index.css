@@ -10,6 +10,8 @@ body {
   width:100%;
   
 }
+
+/*This is the command line css*/
 .command-line{
   display: flex;
   flex-direction: row;
@@ -20,6 +22,12 @@ body {
 }
 .command-line>.cmd-line-textbox{
 width: 500px;
+background-color: crimson;
+height: 50px;
+text-align: left;
+}
+.command-line>.cmd-line-textbox h1{
+  margin:0px;
 }
 .command-line>.cmd-line-btn button{
   text-decoration: none;
@@ -37,6 +45,8 @@ width: 500px;
   background-color: black;
   border-radius: 10px;
 }
+
+/*Styles for buttons*/
 .button-group{
   display: flex;
   width: 800px;
@@ -51,7 +61,7 @@ button{
   border: none;
   color: white;
   background-color: #cf1111;
-  padding: 5px 10px;
+  padding: 2.5px 10px;
   text-align: center;
   border-radius: 5px;
   margin: 3px;
@@ -63,17 +73,25 @@ button:hover{
   background-color: black;
   border-radius: 10px;
 }
+
+/*user input with text box stuff*/
 .user-input{
   display:flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 400px;
   margin: 0px;
+}
+.user-input>.text-and-textbox-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .user-input button{
   margin: 0px;
   width:100px;
   justify-content: space-between;
+  align-content: center;
 }
 .user-input input{
   margin: 0px;
@@ -82,4 +100,13 @@ button:hover{
 .user-input label{
   text-align: center;
   width: 300px;
+  height: 40px;
+}
+input[type=text] {
+  border: 2px solid #cf1111;
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
