@@ -55,95 +55,164 @@ app.on('activate', () => {
 
 function readDeviceInformation(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-i";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function targetMicrocontroller(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-u";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function targetFPGA(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-f";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function targetEEPROM(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-e";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function readTargetToFile(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-r";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function writeTargetFromFile(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-w";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function verifyTargetAgainstFile(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-v";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function fpga4k(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-4";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function fpga8k(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-8";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function fpga16k(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-6";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function reconfigureFPGA(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-x";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function listUSB(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-l";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function checksumHeaderWrite(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-c";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function writeDeviceSerialNumber(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-s";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function clearDTCs(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-y";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function readErrorLog(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-g";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function useSalsa20(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-z";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function enterBootloader(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-j";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function extension(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-%";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function address(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-#";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 
 function byteCount(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-&";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function messageData(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-q";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function bluetoothList(){
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--bluetoothlist";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 // functions for those buttons that require user input to work
@@ -228,6 +297,8 @@ function submit(){
 function empty(){
   var myheaders = "";
   document.getElementById("commandLine").innerHTML = myheaders;
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
 function backspace(){
