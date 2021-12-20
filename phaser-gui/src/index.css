@@ -12,6 +12,14 @@ body {
   height: 100%;
 }
 
+/*execute btn css*/
+.execute-btn {
+  margin-top: 50px;
+}
+.execute-btn button{
+  padding: 5px 16px;
+}
+  
 /*This is the command line css*/
 .command-line{
   display: flex;
@@ -65,11 +73,10 @@ button{
   border: none;
   color: white;
   background-color: #cf1111;
-  padding: 2.5px 10px;
   text-align: center;
   border-radius: 5px;
   margin: 3px;
-  height: 35px;
+  height: 40px;
   font-size:small;
   transition-duration: 0.1s;
 }
@@ -79,23 +86,10 @@ button:hover{
 }
 
 /*user input with text box stuff*/
-.user-input{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  margin: 0px;
-}
 .user-input>.text-and-textbox-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.user-input button{
-  margin: 0px;
-  width:100px;
-  justify-content: space-between;
-  align-content: center;
 }
 .user-input input{
   margin: 0px;
@@ -108,12 +102,38 @@ button:hover{
   height: 40px;
 }
 input[type=text] {
-  border: 2px solid rgb(59, 59, 59);
+  border: 2px solid rgb(102, 102, 102);
   border-radius: 4px;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(102, 102, 102);
   color: white;
+}
+/*styles for drop down textboxes*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  margin:3px;
+}
+
+.dropdown-content {
+  display: none;
+  color: white;
+  background-color: rgb(59, 59, 59);
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown button{
+  margin:0px;
 }
