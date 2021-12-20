@@ -219,79 +219,127 @@ function bluetoothList(){
 
 
 function writeDeviceSku(){
-  document.getElementById("userInputLabel").innerHTML = "enter number between 1 and 32: ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-writeDeviceSku").innerHTML = "enter number between 1 and 32: ";
+  document.getElementById("userInput-writeDeviceSku").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d ";
 }
+function submitwriteDeviceSku(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-writeDeviceSku").value;
+  document.getElementById("userInput-writeDeviceSku").value = myheaders;
+  document.getElementById("userInputLabel-writeDeviceSku").innerHTML = myheaders;
+}
+
 
 function pathToUSB(){
-  document.getElementById("userInputLabel").innerHTML = "enter which UsbCanDevice you would like to use. (ex. 'UsbCanDevice 1 )'";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-pathToUSB").innerHTML = "enter which UsbCanDevice you would like to use. (ex. 'UsbCanDevice 1 )'";
+  document.getElementById("userInput-pathToUSB").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-p ";
+}
+function submitpathToUSB(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-pathToUSB").value;
+  document.getElementById("userInput-pathToUSB").value = myheaders;
+  document.getElementById("userInputLabel-pathToUSB").innerHTML = myheaders;
 }
 
 function canMask(){
-  document.getElementById("userInputLabel").innerHTML = "enter CAN Mask (ex 0x7FF) ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-canMask").innerHTML = "enter CAN Mask (ex 0x7FF) ";
+  document.getElementById("userInput-canMask").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-m ";
+}
+function submitcanMask(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-canMask").value;
+  document.getElementById("userInput-canMask").value = myheaders;
+  document.getElementById("userInputLabel-canMask").innerHTML = myheaders;
 }
 
 function canTxAddress(){
-  document.getElementById("userInputLabel").innerHTML = "enter CAN Tx Address (ex 0x7E4) ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-CANTxAddress").innerHTML = "enter CAN Tx Address (ex 0x7E4) ";
+  document.getElementById("userInput-CANTxAddress").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-a ";
+}
+function submitCANTxAddress(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-CANTxAddress").value;
+  document.getElementById("userInput-CANTxAddress").value = myheaders;
+  document.getElementById("userInputLabel-CANTxAddress").innerHTML = myheaders;
 }
 
 function canRxAddress(){
-  document.getElementById("userInputLabel").innerHTML = "enter CAN RxAddress (ex 0x7EC) ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-canRxAddress").innerHTML = "enter CAN RxAddress (ex 0x7EC) ";
+  document.getElementById("userInput-canRxAddress").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-b ";
+}
+function submitcanRxAddress(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-canRxAddress").value;
+  document.getElementById("userInput-canRxAddress").value = myheaders;
+  document.getElementById("userInputLabel-canRxAddress").innerHTML = myheaders;
 }
 
 function canTimeout(){
-  document.getElementById("userInputLabel").innerHTML = "enter CAN Timeout Length (ex 6000) ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-canTimeout").innerHTML = "enter CAN Timeout Length (ex 6000) ";
+  document.getElementById("userInput-canTimeout").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-t ";
+}
+function submitcanTimeout(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-canTimeout").value;
+  document.getElementById("userInput-canTimeout").value = myheaders;
+  document.getElementById("userInputLabel-canTimeout").innerHTML = myheaders;
 }
 
 function filename(){
-  document.getElementById("userInputLabel").innerHTML = "enter filename (ex Firmware.txt) ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-filename").innerHTML = "enter filename (ex Firmware.txt) ";
+  document.getElementById("userInput-filename").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-n ";
+}
+function submitfilename(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-filename").value;
+  document.getElementById("userInput-filename").value = myheaders;
+  document.getElementById("userInputLabel-filename").innerHTML = myheaders;
 }
 
 function outputFilename(){
-  document.getElementById("userInputLabel").innerHTML = "enter outputFilename (ex ChecksumedFirmware.txt) ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-outputFilename").innerHTML = "enter outputFilename (ex ChecksumedFirmware.txt) ";
+  document.getElementById("userInput-outputFilename").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-o ";
+}
+function submitoutputFilename(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-outputFilename").value;
+  document.getElementById("userInput-outputFilename").value = myheaders;
+  document.getElementById("userInputLabel-outputFilename").innerHTML = myheaders;
 }
 
 function bluetoothName(){
-  document.getElementById("userInputLabel").innerHTML = "enter device you want to connect to";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-bluetoothName").innerHTML = "enter device you want to connect to";
+  document.getElementById("userInput-bluetoothName").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--bluetoothname ";
+}
+function submitbluetoothName(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-bluetoothName").value;
+  document.getElementById("userInput-bluetoothName").value = myheaders;
+  document.getElementById("userInputLabel-bluetoothName").innerHTML = myheaders;
 }
 
 function bluetoothPrefix(){
-  document.getElementById("userInputLabel").innerHTML = "enter device name prefix such as PLX ";
-  document.getElementById("userInput").focus();
+  document.getElementById("userInputLabel-bluetoothPrefix").innerHTML = "enter device name prefix such as PLX ";
+  document.getElementById("userInput-bluetoothPrefix").focus();
   document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--btprefix ";
+}
+function submitbluetoothPrefix(){
+  var myheaders = "";
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput-bluetoothPrefix").value;
+  document.getElementById("userInput-bluetoothPrefix").value = myheaders;
+  document.getElementById("userInputLabel-bluetoothPrefix").innerHTML = myheaders;
 }
 
 // submit button to enter user input into the phasercommand line
-function submit(){
-  if (document.getElementById("userInputLabel").innerHTML ==""){
-    var myheaders = "";
-    document.getElementById("userInput").value = myheaders;
-    document.getElementById("userInputLabel").innerHTML = myheaders;
-  }
-  else{
-  var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput").value;
-  document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
-  }
-}
 
 $(document).keypress(function(e){
   if (e.which == 13){
