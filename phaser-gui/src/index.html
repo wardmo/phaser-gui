@@ -52,25 +52,97 @@
 
       <div class="button-group">
         <button onclick = "listUSB()">List USB - CAN device paths</button>
-        <button onclick = "pathToUSB()">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
+        <div class="dropdown">
+          <button onclick = "pathToUSB()">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-pathToUSB"></label>
+              <input type="text" id = "userInput-pathToUSB" name="input">
+            </div>
+            <button class = "submit" onclick = "submitpathToUSB()">Submit</button>
+          </div>
+        </div>
       </div>
       
       <div class="button-group">
-        <button onclick = "canMask()">CAN Mask                        (default -m 0x7FF )</button>
-        <button onclick = "canTxAddress()">CAN Tx Address                  (default -a 0x7E4 )</button>
-        <button onclick = "canRxAddress()">CAN Rx Address                  (default -b 0x7EC )</button>
-        <button onclick = "canTimeout()">CAN Timeout                     (default -t 6000 )</button>
+        <div class="dropdown">
+          <button onclick = "canMask()">CAN Mask                        (default -m 0x7FF )</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-canMask"></label>
+              <input type="text" id = "userInput-canMask" name="input">
+            </div>
+            <button class = "submit" onclick = "submitcanMask()">Submit</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick = "canTxAddress()">CAN Tx Address                  (default -a 0x7E4 )</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-CANTxAddress"></label>
+              <input type="text" id = "userInput-CANTxAddress" name="input">
+            </div>
+            <button class = "submit" onclick = "submitCANTxAddress()">Submit</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick = "canRxAddress()">CAN Rx Address                  (default -b 0x7EC )</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-canRxAddress"></label>
+              <input type="text" id = "userInput-canRxAddress" name="input">
+            </div>
+            <button class = "submit" onclick = "submitcanRxAddress()">Submit</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick = "canTimeout()">CAN Timeout                     (default -t 6000 )</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-canTimeout"></label>
+              <input type="text" id = "userInput-canTimeout" name="input">
+            </div>
+            <button class = "submit" onclick = "submitcanTimeout()">Submit</button>
+          </div>
+        </div>
       </div>
 
       <div class="button-group">    
-        <button onclick = "filename()">Filename                        (i.e. -n Firmware.txt )</button>
-        <button onclick = "outputFilename()">Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
+        <div class="dropdown">
+          <button onclick = "filename()">Filename                        (i.e. -n Firmware.txt )</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-filename"></label>
+              <input type="text" id = "userInput-filename" name="input">
+            </div>
+            <button class = "submit" onclick = "submitfilename()">Submit</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick = "outputFilename()">Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-outputFilename"></label>
+              <input type="text" id = "userInput-outputFilename" name="input">
+            </div>
+            <button class = "submit" onclick = "submitoutputFilename()">Submit</button>
+          </div>
+        </div>
       </div>
 
       <div class="button-group">    
         <button onclick = "checksumHeaderWrite()">Checksum Header Write</button>
         <button onclick = "writeDeviceSerialNumber()">Write Device Serial Number</button>
-        <button onclick = "writeDeviceSku()">Write Device Sku (numeric 32 bit unsigned int) </button>
+        <div class="dropdown">
+          <button onclick = "writeDeviceSku()">Write Device Sku (numeric 32 bit unsigned int) </button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-writeDeviceSku"></label>
+              <input type="text" id = "userInput-writeDeviceSku" name="input">
+            </div>
+            <button class = "submit" onclick = "submitwriteDeviceSku()">Submit</button>
+          </div>
+        </div>
       </div>
 
       <div class="button-group">    
@@ -87,20 +159,28 @@
 
       <div class="button-group">    
         <button onclick = "bluetoothList()">Bluetooth List</button>
-        <button onclick = "bluetoothName()">Bluetooth Name</button>
-        <button onclick = "bluetoothPrefix()">Bluetooth Prefix</button>
+        <div class="dropdown">
+          <button onclick = "bluetoothName()">Bluetooth Name</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-bluetoothName"></label>
+              <input type="text" id = "userInput-bluetoothName" name="input">
+            </div>
+            <button class = "submit" onclick = "submitbluetoothName()">Submit</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick = "bluetoothPrefix()">Bluetooth Prefix</button>
+          <div class="dropdown-content">
+            <div class="text-and-textbox-wrapper">
+              <label for="input" id = "userInputLabel-bluetoothPrefix"></label>
+              <input type="text" id = "userInput-bluetoothPrefix" name="input">
+            </div>
+            <button class = "submit" onclick = "submitbluetoothPrefix()">Submit</button>
+          </div>
+        </div>
         <button onclick = "quickfeatures()">Quick Features</button>
       </div>
-
-      <br>
-      <div class = "user-input">
-        <div class="text-and-textbox-wrapper">
-          <label for="input" id = "userInputLabel"></label>
-          <input type="text" id = "userInput" name="input">
-        </div>
-        <button id = "submit" onclick = "submit()">Submit</button>
-      </div>
-      <br>
       
       <div class="execute-btn">
         <button onclick = "Execute()">Execute</button>
