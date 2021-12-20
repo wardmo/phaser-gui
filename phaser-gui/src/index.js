@@ -293,6 +293,24 @@ function submit(){
   }
 }
 
+$(document).keypress(function(e){
+  if (e.which == 13){
+    if (document.getElementById("userInputLabel").innerHTML ==""){
+      var myheaders = "";
+      document.getElementById("userInput").value = myheaders;
+      document.getElementById("userInputLabel").innerHTML = myheaders;
+    }
+    else{
+    var myheaders = "";
+    document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + document.getElementById("userInput").value;
+    document.getElementById("userInput").value = myheaders;
+    document.getElementById("userInputLabel").innerHTML = myheaders;
+    }
+  }
+});
+
+
+
 //the backspace and clear functions are found here
 function empty(){
   var myheaders = "";
