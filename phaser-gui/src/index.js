@@ -215,6 +215,13 @@ function bluetoothList(){
   document.getElementById("userInputLabel").innerHTML = myheaders;
 }
 
+function quickFeatures(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--quickfeatures";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
+}
+
 // functions for those buttons that require user input to work
 
 
