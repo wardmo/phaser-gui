@@ -56,7 +56,7 @@
           <button onclick = "pathToUSB()">Path to USB - CAN device to use (default -p 'UsbCanDevice 1')</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-pathToUSB"></label>
+              <label for="input" id = "userInputLabel-pathToUSB">enter which UsbCanDevice you would like to use. (ex. 'UsbCanDevice 1' )</label>
               <input type="text" id = "userInput-pathToUSB" name="input">
             </div>
             <button class = "submit" onclick = "submitpathToUSB()">Submit</button>
@@ -69,7 +69,7 @@
           <button onclick = "canMask()">CAN Mask                        (default -m 0x7FF )</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-canMask"></label>
+              <label for="input" id = "userInputLabel-canMask">enter CAN Mask (ex 0x7FF)</label>
               <input type="text" id = "userInput-canMask" name="input">
             </div>
             <button class = "submit" onclick = "submitcanMask()">Submit</button>
@@ -79,7 +79,7 @@
           <button onclick = "canTxAddress()">CAN Tx Address                  (default -a 0x7E4 )</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-CANTxAddress"></label>
+              <label for="input" id = "userInputLabel-CANTxAddress">enter CAN Tx Address (ex 0x7E4)</label>
               <input type="text" id = "userInput-CANTxAddress" name="input">
             </div>
             <button class = "submit" onclick = "submitCANTxAddress()">Submit</button>
@@ -89,7 +89,7 @@
           <button onclick = "canRxAddress()">CAN Rx Address                  (default -b 0x7EC )</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-canRxAddress"></label>
+              <label for="input" id = "userInputLabel-canRxAddress">enter CAN RxAddress (ex 0x7EC)</label>
               <input type="text" id = "userInput-canRxAddress" name="input">
             </div>
             <button class = "submit" onclick = "submitcanRxAddress()">Submit</button>
@@ -99,7 +99,7 @@
           <button onclick = "canTimeout()">CAN Timeout                     (default -t 6000 )</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-canTimeout"></label>
+              <label for="input" id = "userInputLabel-canTimeout">enter CAN Timeout Length (ex 6000)</label>
               <input type="text" id = "userInput-canTimeout" name="input">
             </div>
             <button class = "submit" onclick = "submitcanTimeout()">Submit</button>
@@ -112,7 +112,7 @@
           <button onclick = "filename()">Filename                        (i.e. -n Firmware.txt )</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-filename"></label>
+              <label for="input" id = "userInputLabel-filename">enter filename (ex Firmware.txt)</label>
               <input type="text" id = "userInput-filename" name="input">
             </div>
             <button class = "submit" onclick = "submitfilename()">Submit</button>
@@ -122,7 +122,7 @@
           <button onclick = "outputFilename()">Output Filename                 (i.e. -o ChecksumedFirmware.txt )</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-outputFilename"></label>
+              <label for="input" id = "userInputLabel-outputFilename">enter outputFilename (ex ChecksumedFirmware.txt)</label>
               <input type="text" id = "userInput-outputFilename" name="input">
             </div>
             <button class = "submit" onclick = "submitoutputFilename()">Submit</button>
@@ -163,7 +163,7 @@
           <button onclick = "bluetoothName()">Bluetooth Name</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-bluetoothName"></label>
+              <label for="input" id = "userInputLabel-bluetoothName">enter device you want to connect to</label>
               <input type="text" id = "userInput-bluetoothName" name="input">
             </div>
             <button class = "submit" onclick = "submitbluetoothName()">Submit</button>
@@ -173,7 +173,7 @@
           <button onclick = "bluetoothPrefix()">Bluetooth Prefix</button>
           <div class="dropdown-content">
             <div class="text-and-textbox-wrapper">
-              <label for="input" id = "userInputLabel-bluetoothPrefix"></label>
+              <label for="input" id = "userInputLabel-bluetoothPrefix">enter device name prefix such as PLX</label>
               <input type="text" id = "userInput-bluetoothPrefix" name="input">
             </div>
             <button class = "submit" onclick = "submitbluetoothPrefix()">Submit</button>
