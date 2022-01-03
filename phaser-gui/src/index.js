@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { stdout, stderr } = require('process');
-const { exec } = require('child_process');
+const { exec } = require(`child_process`);
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -342,6 +342,7 @@ function submitbluetoothPrefix(){
 // submit button to enter user input into the phasercommand line
 
 function execute(){
+  document.getElementById("commandLine").innerHTML = "phasercommandline.exe " + document.getElementById("commandLine").innerHTML;
   exec(document.getElementById("commandLine").innerHTML, function(error, stdout, stderr){
     if(error){
       console.log(`error: ${error.message}`)
