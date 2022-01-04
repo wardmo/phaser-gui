@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const { stdout, stderr } = require('process');
+//const { stdout, stderr, stdin } = require('process');
 const { exec } = require(`child_process`);
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -346,8 +346,7 @@ function submitbluetoothPrefix(){
 // submit button to enter user input into the phasercommand line
 
 function execute(){
-  document.getElementById("commandLine").innerHTML = "phasercommandline.exe " + document.getElementById("commandLine").innerHTML;
-  exec(document.getElementById("commandLine").innerHTML, function(error, stdout, stderr){
+  exec("C:\\dev\\phaser\\phaser-gui\\phaser-command-line\\phasercommandline.exe " + document.getElementById("commandLine").innerHTML, {timeout: 3000}, function(error, stdout, stderr){
     if(error){
       console.log(`error: ${error.message}`)
       document.getElementById("outbox").innerHTML = error;
@@ -356,10 +355,9 @@ function execute(){
       console.log(`stderr: ${stderr}`)
       document.getElementById("outbox").innerHTML = stderr;
     }
-    else{
-      console.log(`stdout: ${stdout}`)
-      document.getElementById("outbox").innerHTML = stdout;
-    }
+    console.log(`stdout: ${stdout}`)
+    document.getElementById("outbox").innerHTML = stdout;
+    
   })
 }
 
