@@ -60,293 +60,293 @@ app.on('activate', () => {
 // }
 
 function readDeviceInformation(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-i";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-i";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function targetMicrocontroller(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-u";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-u";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function targetFPGA(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-f";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-f";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function targetEEPROM(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-e";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-e";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function readTargetToFile(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-r";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-r";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function writeTargetFromFile(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-w";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-w";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function verifyTargetAgainstFile(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-v";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-v";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function fpga4k(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-4";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-4";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function fpga8k(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-8";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-8";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function fpga16k(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-6";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-6";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function reconfigureFPGA(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-x";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-x";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function listUSB(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-l";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-l";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function checksumHeaderWrite(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-c";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-c";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function writeDeviceSerialNumber(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-s";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-s";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function clearDTCs(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-y";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-y";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function readErrorLog(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-g";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-g";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function useSalsa20(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-z";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-z";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function enterBootloader(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-j";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-j";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function extension(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-%";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-%";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function address(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-#";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-#";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 
 function byteCount(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-&";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-&";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function messageData(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-q";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-q";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function bluetoothList(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--bluetoothlist";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--bluetoothlist";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function quickFeatures(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--quickfeatures";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--quickfeatures";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 // functions for those buttons that require user input to work
 
 
 function writeDeviceSku(){
-  document.getElementById("userInputLabel-writeDeviceSku").innerHTML = "enter number between 1 and 32: ";
+  document.getElementById("userInputLabel-writeDeviceSku").value = "enter number between 1 and 32: ";
   document.getElementById("userInput-writeDeviceSku").focus();
 }
 function submitwriteDeviceSku(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-d " + document.getElementById("userInput-writeDeviceSku").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-d " + document.getElementById("userInput-writeDeviceSku").value;
   document.getElementById("userInput-writeDeviceSku").value = myheaders;
-  document.getElementById("userInputLabel-writeDeviceSku").innerHTML = myheaders;
+  document.getElementById("userInputLabel-writeDeviceSku").value = myheaders;
 }
 
 
 function pathToUSB(){
-  document.getElementById("userInputLabel-pathToUSB").innerHTML = "enter which UsbCanDevice you would like to use. (ex. 'UsbCanDevice 1 ')";
+  document.getElementById("userInputLabel-pathToUSB").value = "enter which UsbCanDevice you would like to use. (ex. 'UsbCanDevice 1 ')";
   document.getElementById("userInput-pathToUSB").focus();
 }
 function submitpathToUSB(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-p " + document.getElementById("userInput-pathToUSB").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-p " + document.getElementById("userInput-pathToUSB").value;
   document.getElementById("userInput-pathToUSB").value = myheaders;
-  document.getElementById("userInputLabel-pathToUSB").innerHTML = myheaders;
+  document.getElementById("userInputLabel-pathToUSB").value = myheaders;
 }
 
 function canMask(){
-  document.getElementById("userInputLabel-canMask").innerHTML = "enter CAN Mask (ex 0x7FF) ";
+  document.getElementById("userInputLabel-canMask").value = "enter CAN Mask (ex 0x7FF) ";
   document.getElementById("userInput-canMask").focus();
 
 }
 function submitcanMask(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-m " + document.getElementById("userInput-canMask").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-m " + document.getElementById("userInput-canMask").value;
   document.getElementById("userInput-canMask").value = myheaders;
-  document.getElementById("userInputLabel-canMask").innerHTML = myheaders;
+  document.getElementById("userInputLabel-canMask").value = myheaders;
 }
 
 function canTxAddress(){
-  document.getElementById("userInputLabel-CANTxAddress").innerHTML = "enter CAN Tx Address (ex 0x7E4) ";
+  document.getElementById("userInputLabel-CANTxAddress").value = "enter CAN Tx Address (ex 0x7E4) ";
   document.getElementById("userInput-CANTxAddress").focus();
 }
 function submitCANTxAddress(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-a " + document.getElementById("userInput-CANTxAddress").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-a " + document.getElementById("userInput-CANTxAddress").value;
   document.getElementById("userInput-CANTxAddress").value = myheaders;
-  document.getElementById("userInputLabel-CANTxAddress").innerHTML = myheaders;
+  document.getElementById("userInputLabel-CANTxAddress").value = myheaders;
 }
 
 function canRxAddress(){
-  document.getElementById("userInputLabel-canRxAddress").innerHTML = "enter CAN RxAddress (ex 0x7EC) ";
+  document.getElementById("userInputLabel-canRxAddress").value = "enter CAN RxAddress (ex 0x7EC) ";
   document.getElementById("userInput-canRxAddress").focus();
 }
 function submitcanRxAddress(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-b " + document.getElementById("userInput-canRxAddress").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-b " + document.getElementById("userInput-canRxAddress").value;
   document.getElementById("userInput-canRxAddress").value = myheaders;
-  document.getElementById("userInputLabel-canRxAddress").innerHTML = myheaders;
+  document.getElementById("userInputLabel-canRxAddress").value = myheaders;
 }
 
 function canTimeout(){
-  document.getElementById("userInputLabel-canTimeout").innerHTML = "enter CAN Timeout Length (ex 6000) ";
+  document.getElementById("userInputLabel-canTimeout").value = "enter CAN Timeout Length (ex 6000) ";
   document.getElementById("userInput-canTimeout").focus();
 }
 function submitcanTimeout(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-t " + document.getElementById("userInput-canTimeout").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-t " + document.getElementById("userInput-canTimeout").value;
   document.getElementById("userInput-canTimeout").value = myheaders;
-  document.getElementById("userInputLabel-canTimeout").innerHTML = myheaders;
+  document.getElementById("userInputLabel-canTimeout").value = myheaders;
 }
 
 function filename(){
-  document.getElementById("userInputLabel-filename").innerHTML = "enter filename (ex Firmware.txt) ";
+  document.getElementById("userInputLabel-filename").value = "enter filename (ex Firmware.txt) ";
   document.getElementById("userInput-filename").focus();
 }
 function submitfilename(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-n " + document.getElementById("userInput-filename").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-n " + document.getElementById("userInput-filename").value;
   document.getElementById("userInput-filename").value = myheaders;
-  document.getElementById("userInputLabel-filename").innerHTML = myheaders;
+  document.getElementById("userInputLabel-filename").value = myheaders;
 }
 
 function outputFilename(){
-  document.getElementById("userInputLabel-outputFilename").innerHTML = "enter outputFilename (ex ChecksumedFirmware.txt) ";
+  document.getElementById("userInputLabel-outputFilename").value = "enter outputFilename (ex ChecksumedFirmware.txt) ";
   document.getElementById("userInput-outputFilename").focus();
 }
 function submitoutputFilename(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "-o " + document.getElementById("userInput-outputFilename").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-o " + document.getElementById("userInput-outputFilename").value;
   document.getElementById("userInput-outputFilename").value = myheaders;
-  document.getElementById("userInputLabel-outputFilename").innerHTML = myheaders;
+  document.getElementById("userInputLabel-outputFilename").value = myheaders;
 }
 
 function bluetoothName(){
-  document.getElementById("userInputLabel-bluetoothName").innerHTML = "enter device you want to connect to";
+  document.getElementById("userInputLabel-bluetoothName").value = "enter device you want to connect to";
   document.getElementById("userInput-bluetoothName").focus();
 }
 function submitbluetoothName(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--bluetoothname " + document.getElementById("userInput-bluetoothName").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--bluetoothname " + document.getElementById("userInput-bluetoothName").value;
   document.getElementById("userInput-bluetoothName").value = myheaders;
-  document.getElementById("userInputLabel-bluetoothName").innerHTML = myheaders;
+  document.getElementById("userInputLabel-bluetoothName").value = myheaders;
 }
 
 function bluetoothPrefix(){
-  document.getElementById("userInputLabel-bluetoothPrefix").innerHTML = "enter device name prefix such as PLX ";
+  document.getElementById("userInputLabel-bluetoothPrefix").value = "enter device name prefix such as PLX ";
   document.getElementById("userInput-bluetoothPrefix").focus();
 }
 function submitbluetoothPrefix(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--btprefix " + document.getElementById("userInput-bluetoothPrefix").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--btprefix " + document.getElementById("userInput-bluetoothPrefix").value;
   document.getElementById("userInput-bluetoothPrefix").value = myheaders;
-  document.getElementById("userInputLabel-bluetoothPrefix").innerHTML = myheaders;
+  document.getElementById("userInputLabel-bluetoothPrefix").value = myheaders;
 }
 
 // submit button to enter user input into the phasercommand line
 
 function execute(){
-  exec("C:\\dev\\phaser\\phaser-gui\\phaser-command-line\\phasercommandline.exe " + document.getElementById("commandLine").innerHTML, {timeout: 3000}, function(error, stdout, stderr){
+  exec("C:\\dev\\phaser\\phaser-gui\\phaser-command-line\\phasercommandline.exe " + document.getElementById("commandLine").value, {timeout: 3000}, function(error, stdout, stderr){
     if(error){
       console.log(`error: ${error.message}`)
       document.getElementById("outbox").innerHTML = error;
@@ -364,15 +364,15 @@ function execute(){
 //the backspace and clear functions are found here
 function empty(){
   var myheaders = "";
-  document.getElementById("commandLine").innerHTML = myheaders;
+  document.getElementById("commandLine").value = myheaders;
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
 
 function backspace(){
-  let str = document.getElementById("commandLine").innerHTML
+  let str = document.getElementById("commandLine").value
   str = str.substring(0,str.length - 1);
-  document.getElementById("commandLine").innerHTML = str;
+  document.getElementById("commandLine").value = str;
 }
 /*
 function Execute(){
