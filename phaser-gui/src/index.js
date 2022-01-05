@@ -349,14 +349,14 @@ function execute(){
   exec("C:\\dev\\phaser\\phaser-gui\\phaser-command-line\\phasercommandline.exe " + document.getElementById("commandLine").value, {timeout: 3000}, function(error, stdout, stderr){
     if(error){
       console.log(`error: ${error.message}`)
-      document.getElementById("outbox").innerHTML = error;
+      document.getElementById("outbox").value = error;
     }
     else if(stderr){
       console.log(`stderr: ${stderr}`)
-      document.getElementById("outbox").innerHTML = stderr;
+      document.getElementById("outbox").value = stderr;
     }
     console.log(`stdout: ${stdout}`)
-    document.getElementById("outbox").innerHTML = stdout;
+    document.getElementById("outbox").value = stdout;
     
   })
 }
