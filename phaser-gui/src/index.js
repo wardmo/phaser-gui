@@ -231,7 +231,7 @@ function writeDeviceSerialNumber(){
 }
 function submitwriteDeviceSerialNumber(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-s " + document.getElementById("userInput-writeDeviceSku").value + " ";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-s " + document.getElementById("userInput-writeDeviceSerialNumber").value + " ";
   document.getElementById("userInput-writeDeviceSerialNumber").value = myheaders;
   document.getElementById("userInputLabel-writeDeviceSerialNumber").value = myheaders;
 }
