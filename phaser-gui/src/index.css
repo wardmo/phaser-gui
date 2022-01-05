@@ -153,15 +153,15 @@ input[type=text] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:50px;
+  height:100%;
   width:85%;
   margin-top: 10px;
 }
-.output h1{
-  width: 500px;
+.output input{
+  width: 700px;
   background-color: rgb(59, 59, 59);
-  height: 50px;
+  height: 100%;
   text-align: left;
-  border-radius: 25px;
+  border-radius: 5px;
   color:white;
 }
