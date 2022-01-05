@@ -36,7 +36,7 @@ body {
 .command-line>.cmd-line-textbox{
 width: 500px;
 background-color: rgb(59, 59, 59);
-height: 50px;
+height: auto;
 text-align: left;
 border-radius: 25px;
 color:white;
@@ -45,11 +45,14 @@ color:white;
   margin:0px;
   width: 500px;
   background-color: rgb(59, 59, 59);
-  height: 50px;
+  height: auto;
   text-align: left;
   border-radius: 25px;
   color:white;
 }
+.command-line>.cmd-line-textbox input:focus{
+  
+} 
 .command-line>.cmd-line-btn button{
   text-decoration: none;
   border: none;
@@ -157,14 +160,15 @@ input[type=text] {
   width:85%;
   margin-top: 10px;
 }
-.output input{
+.output textarea {
+  resize: vertical;
+  overflow: visible;
   width: 700px;
   background-color: rgb(59, 59, 59);
   height: 100%;
   text-align: left;
   border-radius: 25px;
   color:white;
+  padding:20px;
 }
-.output input[type=text] {
-  width: 100px;
-}
+
