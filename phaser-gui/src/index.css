@@ -41,8 +41,14 @@ text-align: left;
 border-radius: 25px;
 color:white;
 }
-.command-line>.cmd-line-textbox h1{
+.command-line>.cmd-line-textbox input{
   margin:0px;
+  width: 500px;
+  background-color: rgb(59, 59, 59);
+  height: 50px;
+  text-align: left;
+  border-radius: 25px;
+  color:white;
 }
 .command-line>.cmd-line-btn button{
   text-decoration: none;
@@ -147,15 +153,18 @@ input[type=text] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:50px;
+  height:100%;
   width:85%;
   margin-top: 10px;
 }
-.output h1{
-  width: 500px;
+.output input{
+  width: 700px;
   background-color: rgb(59, 59, 59);
-  height: 50px;
+  height: 100%;
   text-align: left;
   border-radius: 25px;
   color:white;
+}
+.output input[type=text] {
+  width: 100px;
 }
