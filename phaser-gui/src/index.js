@@ -386,3 +386,10 @@ function Execute(){
   document.getElementById("outbox").innerHTML = str.output;
 }
 */
+
+function exit(){
+  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--exit";
+  var myheaders = "";
+  document.getElementById("userInput").value = myheaders;
+  document.getElementById("userInputLabel").innerHTML = myheaders;
+}
