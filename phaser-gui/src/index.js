@@ -150,12 +150,7 @@ function checksumHeaderWrite(){
   document.getElementById("userInputLabel").value = myheaders;
 }
 
-function writeDeviceSerialNumber(){
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-s";
-  var myheaders = "";
-  document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").value = myheaders;
-}
+
 
 function clearDTCs(){
   document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-y";
@@ -230,6 +225,16 @@ function quickFeatures(){
 
 // functions for those buttons that require user input to work
 
+function writeDeviceSerialNumber(){
+  document.getElementById("userInputLabel-writeDeviceSerialNumber").value = "Enter Serial Number ";
+  document.getElementById("userInput-writeDeviceSerialNumber").focus();
+}
+function submitwriteDeviceSerialNumber(){
+  var myheaders = "";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-s " + document.getElementById("userInput-writeDeviceSku").value + " ";
+  document.getElementById("userInput-writeDeviceSerialNumber").value = myheaders;
+  document.getElementById("userInputLabel-writeDeviceSerialNumber").value = myheaders;
+}
 
 function writeDeviceSku(){
   document.getElementById("userInputLabel-writeDeviceSku").value = "enter number between 1 and 32: ";
@@ -237,7 +242,7 @@ function writeDeviceSku(){
 }
 function submitwriteDeviceSku(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-d " + document.getElementById("userInput-writeDeviceSku").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-d " + document.getElementById("userInput-writeDeviceSku").value + " ";
   document.getElementById("userInput-writeDeviceSku").value = myheaders;
   document.getElementById("userInputLabel-writeDeviceSku").value = myheaders;
 }
@@ -249,7 +254,7 @@ function pathToUSB(){
 }
 function submitpathToUSB(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-p " + document.getElementById("userInput-pathToUSB").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-p " + document.getElementById("userInput-pathToUSB").value + " ";
   document.getElementById("userInput-pathToUSB").value = myheaders;
   document.getElementById("userInputLabel-pathToUSB").value = myheaders;
 }
@@ -261,7 +266,7 @@ function canMask(){
 }
 function submitcanMask(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-m " + document.getElementById("userInput-canMask").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-m " + document.getElementById("userInput-canMask").value + " ";
   document.getElementById("userInput-canMask").value = myheaders;
   document.getElementById("userInputLabel-canMask").value = myheaders;
 }
@@ -272,7 +277,7 @@ function canTxAddress(){
 }
 function submitCANTxAddress(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-a " + document.getElementById("userInput-CANTxAddress").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-a " + document.getElementById("userInput-CANTxAddress").value + " ";
   document.getElementById("userInput-CANTxAddress").value = myheaders;
   document.getElementById("userInputLabel-CANTxAddress").value = myheaders;
 }
@@ -283,7 +288,7 @@ function canRxAddress(){
 }
 function submitcanRxAddress(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-b " + document.getElementById("userInput-canRxAddress").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-b " + document.getElementById("userInput-canRxAddress").value + " ";
   document.getElementById("userInput-canRxAddress").value = myheaders;
   document.getElementById("userInputLabel-canRxAddress").value = myheaders;
 }
@@ -294,7 +299,7 @@ function canTimeout(){
 }
 function submitcanTimeout(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-t " + document.getElementById("userInput-canTimeout").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-t " + document.getElementById("userInput-canTimeout").value + " ";
   document.getElementById("userInput-canTimeout").value = myheaders;
   document.getElementById("userInputLabel-canTimeout").value = myheaders;
 }
@@ -305,7 +310,7 @@ function filename(){
 }
 function submitfilename(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-n " + document.getElementById("userInput-filename").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-n " + document.getElementById("userInput-filename").value + " ";
   document.getElementById("userInput-filename").value = myheaders;
   document.getElementById("userInputLabel-filename").value = myheaders;
 }
@@ -316,7 +321,7 @@ function outputFilename(){
 }
 function submitoutputFilename(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-o " + document.getElementById("userInput-outputFilename").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "-o " + document.getElementById("userInput-outputFilename").value + " ";
   document.getElementById("userInput-outputFilename").value = myheaders;
   document.getElementById("userInputLabel-outputFilename").value = myheaders;
 }
@@ -327,7 +332,7 @@ function bluetoothName(){
 }
 function submitbluetoothName(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--bluetoothname " + document.getElementById("userInput-bluetoothName").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--bluetoothname " + document.getElementById("userInput-bluetoothName").value + " ";
   document.getElementById("userInput-bluetoothName").value = myheaders;
   document.getElementById("userInputLabel-bluetoothName").value = myheaders;
 }
@@ -338,7 +343,7 @@ function bluetoothPrefix(){
 }
 function submitbluetoothPrefix(){
   var myheaders = "";
-  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--btprefix " + document.getElementById("userInput-bluetoothPrefix").value;
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--btprefix " + document.getElementById("userInput-bluetoothPrefix").value + " ";
   document.getElementById("userInput-bluetoothPrefix").value = myheaders;
   document.getElementById("userInputLabel-bluetoothPrefix").value = myheaders;
 }
