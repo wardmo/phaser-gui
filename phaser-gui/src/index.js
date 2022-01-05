@@ -388,8 +388,8 @@ function Execute(){
 */
 
 function exit(){
-  document.getElementById("commandLine").innerHTML = document.getElementById("commandLine").innerHTML + "--exit";
+  document.getElementById("commandLine").value = document.getElementById("commandLine").value + "--exit";
   var myheaders = "";
   document.getElementById("userInput").value = myheaders;
-  document.getElementById("userInputLabel").innerHTML = myheaders;
+  document.getElementById("userInputLabel").value = myheaders;
 }
