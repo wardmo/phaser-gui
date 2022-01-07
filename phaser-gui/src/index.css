@@ -50,9 +50,7 @@ color:white;
   border-radius: 25px;
   color:white;
 }
-.command-line>.cmd-line-textbox input:focus{
   
-} 
 .command-line>.cmd-line-btn button{
   text-decoration: none;
   border: none;
